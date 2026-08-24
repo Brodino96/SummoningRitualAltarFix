@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "summoningritualaltarfix",
+  "version": "${version}",
+  "name": "SummoningRitualAltarFix",
+  "description": "",
+  "authors": [
+    {
+      "name": "Brodino",
+      "contact": {
+        "email": "brodino96@gmail.com",
+        "homepage": "https://brodino.dev",
+        "issues": "https://github.com/Brodino96/SummoningRitualAltarFix/issues",
+        "sources": "https://github.com/Brodino96/SummoningRitualAltarFix"
+      }
+    }
+  ],
+  "contact": {
+    "sources": "https://github.com/Brodino96/SummoningRitualAltarFix",
+    "issues": "https://github.com/Brodino96/SummoningRitualAltarFix/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/summoningritualaltarfix/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.brodino.summoningritualaltarfix.client.SummoningritualaltarfixClient"
+    ],
+    "main": [
+      "dev.brodino.summoningritualaltarfix.Summoningritualaltarfix"
+    ]
+  },
+  "mixins": [
+    "summoningritualaltarfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "summoningrituals": ">=1.19-2-2.0.7"
+  }
+}
